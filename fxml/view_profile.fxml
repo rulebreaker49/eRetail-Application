@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="276.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myprojectjava.ProfileController">
+    <children>
+      <HBox layoutX="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="321.0" style="-fx-background-color: #42adff;">
+         <children>
+            <ImageView fitHeight="44.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="10.0">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+               <effect>
+                  <DropShadow color="WHITE" height="18.03" spread="0.28" width="23.97" />
+               </effect>
+            </ImageView>
+           </children>
+      </HBox>
+      <AnchorPane layoutY="50.0" prefHeight="392.0" prefWidth="321.0">
+         <children>
+            <GridPane hgap="3.0" layoutX="54.0" layoutY="52.0" prefHeight="96.0" prefWidth="214.0" vgap="3.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="119.0" minWidth="10.0" prefWidth="101.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="99.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Name:" textFill="#787878">
+                     <font>
+                        <Font name="Arial Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Username:" textFill="#787878" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="Contact No.:" textFill="#787878" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="nameText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="usernameText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="contactText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
+            <Text fontSmoothingType="LCD" layoutX="98.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Details">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="92.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Password">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Text>
+            <GridPane hgap="3.0" layoutX="21.0" layoutY="196.0" prefHeight="126.0" prefWidth="280.0" vgap="3.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="123.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="154.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Password:" textFill="#787878">
+                      <font>
+                        <Font name="Arial Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label text="New Password:" textFill="#787878" GridPane.rowIndex="1">
+                      <font>
+                        <Font name="Arial Bold Italic" size="13.0" />
+                     </font>
+                  </Label>                  
+                  <Label text="Re-Type Password:" textFill="#787878" GridPane.rowIndex="2">
+                      <font>
+                        <Font name="Arial Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="oldPassword" GridPane.columnIndex="1" />
+                  <PasswordField fx:id="newPassword" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <PasswordField fx:id="reTypePassword" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <Button fx:id="saveButton" layoutX="249.0" layoutY="333.0" mnemonicParsing="false" text="Save" />
+            <Text fx:id="errorText" fill="#d00505" layoutX="21.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

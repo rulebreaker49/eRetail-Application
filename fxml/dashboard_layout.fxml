@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myprojectjava.DashController">
+   <children>
+      <HBox layoutX="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="1080.0" style="-fx-background-color: #42adff;">
+         <children>
+            <ImageView fitHeight="44.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="10.0">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+               <effect>
+                  <DropShadow color="WHITE" height="18.03" spread="0.28" width="23.97" />
+               </effect>
+            </ImageView>
+            <Button fx:id="cartButton" alignment="BOTTOM_LEFT" graphicTextGap="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#openCart" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #1c92ed; -fx-border-radius: 2px;" stylesheets="@../myprojectjava/cartButton.css" text="CART" textFill="WHITE" translateX="840.0" translateY="10.0" wrapText="true">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#104aa8" height="5" spread="0.05" width="5" />
+               </effect>
+               <opaqueInsets>
+                  <Insets top="15.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="4.0" top="2.0" />
+               </padding>
+            </Button>
+            <MenuButton id="menu_button" fx:id="menuButton" mnemonicParsing="false" stylesheets="@../myprojectjava/menuButtonStyle.css" text="Your Account" textAlignment="CENTER" textFill="WHITE" translateX="580.0" translateY="12.0" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </MenuButton>
+            <Label fx:id="itemCount" style="-fx-background-color: #0082e8; -fx-background-radius: 3px; -fx-padding: 1 3 1 3; -fx-font-weight: bold;" text="0" textAlignment="CENTER" textFill="WHITE" translateX="694.0" translateY="17.0" />
+         
+         </children>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </HBox>
+      <AnchorPane layoutX="0.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="1080.0">
+         <children>
+            <ListView fx:id="listView" layoutY="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#itemClicked" prefHeight="590.0" prefWidth="210.0" stylesheets="@../myprojectjava/listViewStyle.css">
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis></ListView>
+            <ScrollPane fx:id="scrollPane" centerShape="false" layoutX="210.0" layoutY="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="870.0">
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></ScrollPane>
+         </children>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </AnchorPane>
+   </children>
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+</AnchorPane>
