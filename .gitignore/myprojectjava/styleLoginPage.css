@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 10, 2017, 12:29:24 AM
+    Author     : Gaurav Jindal
+*/
+.root {
+    -fx-border-color: #ffffff;
+    -fx-border-width: 3px;
+    -fx-background-image: url("/image/image_two.jpg");
+}
+.label {
+    -fx-font-size: 12px;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-text-fill: #efefef;
+}
+.button {
+    -fx-border-color: #ffffff;
+    -fx-background-color: linear-gradient(#000000, #474747);
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-text-alignment: center;
+}
+.button:pressed{
+        -fx-border-color: #ffffff;
+        -fx-text-fill: #ffffff;
+        -fx-background-color: linear-gradient(#3a3a3a,#969696);
+        -fx-text-alignment: center;
+        -fx-border-radius: 5px;
+}
+#register-button {
+    -fx-font-size: 12px;
+    -fx-text-fill: #cccccc;
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-text-alignment: right;
+    -fx-border-color: rgba(0,0,0,0);
+    -fx-padding: 0px;
+}
+#register-button:pressed {
+    -fx-font-size: 12px;
+    -fx-text-fill: #ffffff;
+    -fx-text-alignment: right;
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-border-color: rgba(0,0,0,0);
+    -fx-padding: 0px;
+}
+
+

@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 18, 2017, 3:44:10 AM
+    Author     : Gaurav Jindal
+*/
+.root{
+    -fx-background-image:url("/image/image_three.png");
+}
+.label {
+    -fx-font-size: 12px;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+    -fx-text-fill: #efefef;
+}
+.button {
+    -fx-border-color: #ffffff;
+    -fx-background-color: linear-gradient(#0e00b7, #06004f);
+    -fx-background-radius:5px;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-text-alignment: center;
+}
+.button:pressed{
+        -fx-border-color: #ffffff;
+        -fx-text-fill: #ffffff;
+        -fx-background-color: linear-gradient(#534baf,#0d00a3);
+        -fx-text-alignment: center;
+        -fx-border-radius: 5px;
+}

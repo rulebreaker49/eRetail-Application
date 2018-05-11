@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MyProjectJava.jnlp">
+  <information>
+    <title>MyProjectJava</title>
+    <vendor>Gaurav Jindal</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MyProjectJava.jar" size="12725514" download="eager" />
+    <jar href="lib\fillo-1.16.jar" size="13345417" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MyProjectJava" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="myprojectjava.MyProjectJava"  name="MyProjectJava" />
+  <update check="always"/>
+</jnlp>
